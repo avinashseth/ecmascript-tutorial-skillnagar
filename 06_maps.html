@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Maps</title>
+</head>
+<body>
+    <h1>Emcascript 6 Tutorials</h1>
+    <h2>JavaScript Maps</h2>
+    <p>by <a href="https://youtube.com/skillnagar">skillnagar</a></p>
+    <script>
+
+        let personMap = new Map();
+
+        personMap.set("name", "Avinash Seth");
+        personMap.set("age", 99);
+        personMap.set(9, "A Random number inside a Map");
+
+        // console.log(personMap);
+
+        // let personObj = {
+        //     "name": "Superman",
+        //     "age": 29,
+        //     9: "A random number inside person object"
+        // };
+
+        // console.log(personObj);
+
+        // console.log(personMap.get(9));
+        // console.log(personObj["9"]);
+
+        // map helper functions
+        
+        console.log(personMap);
+
+        // personMap.delete(9);
+
+        // console.log(personMap);
+
+        // console.log(personMap.has(9));
+
+        // map entries
+
+        // for (let person of personMap.entries()) {
+
+        //     console.log(person);
+
+        // }
+
+        // map keys
+
+        for (let person of personMap.keys()) {
+
+            console.log(person);
+
+        }
+
+        // map values
+
+        for (let person of personMap.values()) {
+
+            console.log(person);
+
+        }
+
+    </script>
+</body>
+</html>
