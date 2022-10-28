@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Promise</title>
+</head>
+<body>
+    <h1>Emcascript 6 Tutorials</h1>
+    <h2>JavaScript Promise</h2>
+    <p>by <a href="https://youtube.com/skillnagar">skillnagar</a></p>
+    <script>
+
+        // want to watch the match, but cannot risk rain
+
+        // buy the ticket and watch the match
+
+        // we will refund 75% of the ticket price, if it rains
+
+        // console.log(Math.floor(Math.random() * 2));
+
+        let promise = new Promise((resolve, reject) => {
+
+            let itIsRaining = Math.floor(Math.random() * 2);
+
+            if(itIsRaining == 1) {
+
+                resolve("You are eligible for 75% refund, as it is raining");
+
+            } else {
+
+                reject("You are not eligible for refund, as it is not raining");
+
+            }
+
+        });
+
+        promise.then((data) => {
+
+            console.log(data);
+        
+        }).catch((data) => {
+        
+            console.log(data);
+        
+        });
+
+    </script>
+</body>
+</html>
